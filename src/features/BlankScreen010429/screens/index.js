@@ -19,7 +19,7 @@ export class __Blank extends React.Component {
   static navigationOptions = ({ navigation }) => {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
-  state = { Toggle_8: true, Radio_10: true, Radio_11: true }
+  state = { Toggle_8: true, Radio_10: true, CheckBox_11: true }
   render = () => (
     <View
       style={{
@@ -314,8 +314,8 @@ export class __Blank extends React.Component {
         checked={this.state.Radio_10}
         onChange={nextChecked => this.setState({ Radio_10: nextChecked })}
       />
-      <Radio
-        text="Radio button"
+      <CheckBox
+        text="Checkbox"
         disabled={false}
         style={{
           marginLeft: 0,
@@ -342,8 +342,34 @@ export class __Blank extends React.Component {
           lineHeight: 12,
           letterSpacing: 0
         }}
-        checked={this.state.Radio_11}
-        onChange={nextChecked => this.setState({ Radio_11: nextChecked })}
+        checked={this.state.CheckBox_11}
+        onChange={nextChecked => this.setState({ CheckBox_11: nextChecked })}
+      />
+      <Image
+        resizeMode="cover"
+        style={{
+          width: "100%",
+          height: 200,
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 0,
+          marginBottom: 0,
+          paddingLeft: 0,
+          paddingRight: 0,
+          paddingTop: 0,
+          paddingBottom: 0,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
       />
     </View>
   )
